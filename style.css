@@ -109,8 +109,10 @@ body{
     padding: 20px;
     display: flex;
     align-items: center;
+    background-size: cover;
 
 }
+
 
 /* .bg1{
     position: absolute;
@@ -383,6 +385,7 @@ footer{
     #search-banner{
         width: 90%;
         height: 500px;
+        background-size: cover;
     }
     #popular{
         width: 90%;
@@ -395,7 +398,7 @@ footer{
         top: -20px;
     }
     #search-banner{
-        background-size: 700px;
+        background-size: 900px;
     }
     #menu{
         width: 90%;
@@ -495,6 +498,41 @@ footer{
         width: 100%;
         height: 100%;
        
+    }
+    .m-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .m-box{
+        margin: 10px;
+    }
+    .f-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .f-link{
+        text-align: center;
+    }
+}
+@media(max-width:750px){
+    #search-banner{
+        height: 300px;
+    }
+    .search-text{
+        margin-left: 20px;
+    }
+    .search-text h1{
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .bg-1{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    #search-banner{
+        height: 200px;
+        background-size: 450px;
     }
 }
 
